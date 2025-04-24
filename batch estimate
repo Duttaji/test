@@ -1,0 +1,42 @@
+EC2 (m5.large, 2 instances):
+Hosting chatbot, capable of easily handling ~100K chats/month
+Approx. $200–250/month
+
+Amazon EFS:
+For shared vector DB storage (FAISS/Chroma), minimal storage needed (<10GB).
+Approx. $30–50/month
+
+Application Load Balancer (ALB):
+Load balancing & SSL management.
+Approx. $25–35/month
+
+VPC and NAT Gateway:
+Secure networking & external API access.
+Approx. $35–50/month
+
+CloudWatch & Logging:
+Operational monitoring, basic logs, alerts.
+Approx. $10–15/month
+
+Route 53:
+DNS routing service.
+Approx. $2–5/month
+ 
+Total AWS Cost (approx.): $302–405/month
+
+#specs m5.large
+vCPUs: 2
+RAM: 8 GiB
+Network Performance: Up to 10 Gbps (baseline bandwidth ~0.75 Gbps)
+EBS Bandwidth: Up to 2.120 Gbps
+Architecture: 64-bit (x86-based, Intel Xeon or AMD EPYC)
+Storage: EBS-only (no local NVMe storage)
+
+#groq api costs 
+
+0.59/M tokens 
+
+Average turn token 1120
+
+average costing 70~80 $ per month
+ 
